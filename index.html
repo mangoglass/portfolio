@@ -10,46 +10,53 @@
 
 <body>
 
-	<div id="header">
-		<div class="wrapper">
-			<div id="header-body">
-				<div class="media" id="header-media">
-					<img src="images/" alt="flower">
-				</div>
-				<div id="header-text">
-					Tom Axblad
-				</div>
-				<div id="header-sub-text">
-					Welcome to my portfolio!
+	<div id="container">
+		<div id="header">
+			<div class="wrapper">
+				<div id="header-body">
+					<div class="header-elem" id="header-media">
+						<img src="images/me.jpg" alt="flower">
+					</div>
+					<div class="header-text header-elem"><a href="#aboutme">Top</a></div>
+					<div class="header-text header-elem"><a href="#masterthesis">Thesis</a></div>
+					<div class="header-text header-elem"><a href="#projects-showoff">Projects</a></div>
+					<div class="header-text header-elem"><a href="#contact">Contact</a></div>
+					<div id="header-sub-text" class="header-elem">
+						<br>
+						<h3>About</h3>
+						<br>
+						Aspiring software engineer, and VR developer. On my free time I love to read, play games, and develop personal projects. 
+						When I need a creative outlet I edit videos, draw, and cook.
+						<div class="divider"></div>
+						<div class="social-media header-elem">
+							<a class="icon fa fa-github" href="https://github.com/mangoglass"></a>
+							<a class="icon fa fa-envelope" href="mailto:tom.axblad@gmail.com"></a>
+							<a class="icon fa fa-linkedin" href="https://www.linkedin.com/in/tom-axblad-73243410b/"></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+			
+		<div id="main-content">
 		
-	<div id="main-content">
-		<div id="aboutme" class="left">
-			<div class="wrapper">
-				<div class="special-wrapper">
-					<div class="media">
-						<div class="title  phone-title">
-							<div class="title-text">
-								About Me
-							</div>
-						</div>
-						<img src="images/portrait-second.png" alt="me">
-					</div>
-					<div class="text">
-						<div class="title regular-title">
-							<div class="title-text">
-								About Me
-							</div>
-						</div>
+			<div id="aboutme" class="left">
+				<div class="wrapper">
+					<div class="special-wrapper">
 						<div class="description">
-							Having had an interest for mathemathics since I was a child I ended up getting a degree 
-							at KTH, The Royal Institute of Technology, in Computer Science with a master in Scientific Computing.
-							<br><br>							
-							Loving design, drawing, baking, and games of course drew me closer to the more creative aspects of computer science
-							complementing my degree with more visual courses and projects within game development, simulations and animations.
+							<h1>Hi, I'm Tom Axblad.</h1>
+							<br><br>
+							<h2>
+							I am a guy with an interest for graphics, programming, and VR. Visualization, graphics and algorithms are my primary interest within programming, 
+							making game development one of my most desired jobs. 
+							<br><br>
+							I love working with games, VR, programming projects,and state-of-the-art technologies in creative ways to achieve ambitious goals.							
+							On my free time I love to read, play games, and develop personal projects. 
+							When I need a creative outlet I edit videos, draw, and cook.
+							<br><br>
+							If you are looking for a developer like me, <br>
+							please <a href="mailto:tom.axblad@gmail.com">send me an email</a>.
+							</h2>
 						</div>
 						<div class="button-wrapper">
 							<div class="button-row">
@@ -60,137 +67,189 @@
 								</a>
 							</div>
 						</div>
+						<div class="clear"></div>
 					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="divider"></div>
-		
-		<div id="masterthesis" class="right">
-			<div class="wrapper">
-				<div class="special-wrapper">
-					<div class="media">
-						<div class="title  phone-title">
-							<div class="title-text">
-								Master Thesis
+			
+			<div class="divider"></div>
+			
+			<div id="masterthesis" class="right">
+				<div class="wrapper">
+					<div class="special-wrapper">
+						<div class="media">
+							<div class="title  phone-title">
+								<div class="title-text">
+									Master Thesis
+								</div>
+							</div>
+							<img src="images/thesis.jpg" alt="thesis">
+						</div>
+						<div class="text">
+							<div class="title  regular-title">
+								<div class="title-text">
+									Master Thesis
+								</div>
+							</div>
+							<div class="description">
+								My thesis suggests a path tracing rendering system made for VR with eye tracking. 
+								This system is built and an evaluated to find the impact of foveated rendering on the frame rate between foveated and non foveated rendering.
+								<br><br>
+								Results show that depending on the features included and where the gaze point is located, 
+								foveated rendering provides an increase in frame rates between 1.59 and 10.22 times higher than the same system without foveated rendering.
+							</div>
+							<div class="button-wrapper">
+								<div class="button-row">
+									<a class="button-a" href="files/thesis.pdf" target="_blank">
+										<div class="button">
+											Paper
+										</div>
+									</a>
+								</div>
+								<div class="clear"></div>
 							</div>
 						</div>
-						<img src="images/cover-master.png" alt="thesis">
+						<div class="clear"></div>
 					</div>
+				</div>
+			</div>
+			
+			<div class="divider"></div>
+
+			<div id="projects-showoff" class="center">
+				<div class="wrapper">
 					<div class="text">
-						<div class="title  regular-title">
+						<div class="title">
 							<div class="title-text">
-								Master Thesis
+								Projects
 							</div>
 						</div>
 						<div class="description">
-							My thesis suggests a new eye-tracking based adaptive method to simulate water using SPH. 
-							Using eye-tracking to identify where a user is looking it is possible to identify the area which has caught the focus of the
-							user and this thesis explores the idea of high resolution simulations at the exact view point of the user.
-							<br><br>
-							My suggested method using eye-tracking is also compared to an already established surface based adaptive method through performance
-							to show the potential benefits of limiting the high-resolution area of the simulation to where a user is looking.
+							
 						</div>
-						<div class="button-wrapper">
-							<div class="button-row">
-								<a class="button-a" href="https://youtu.be/H5EeoZBQoug" target="_blank">
-									<div class="button">
-										Video
-									</div>
-								</a>
-								<a class="button-a" href="files/ajla-master-thesis.pdf" target="_blank">
-									<div class="button button-right">
-										Paper
+					</div>
+					<div class="projects">
+						<div class="project-row">
+							<div class="project-object">
+								<a href="https://luddz.github.io/timegame/#/" target="_blank">
+									<img src="images/asters.png" alt="Asters Planetai">
+								
+									<div class="text-wrapper">
+										<div class="text">
+											<div class="title">
+												<div class="title-text">
+													Asters Planetai
+												</div>
+											</div>
+											<div class="description">
+												In this puzzle game you play as a humanoid with the ability to rewind time to a fixed 
+												point and let see the previous version preform the run they just did.
+												The game has 2D open-world free roaming, exploration, and puzzles.
+												I was the lead artist and a programmer for the project.
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="divider"></div>
-
-		<div id="projects-showoff" class="center">
-			<div class="wrapper">
-				<div class="text">
-					<div class="title">
-						<div class="title-text">
-							Projects
-						</div>
-					</div>
-					<div class="description">
-						
-					</div>
-				</div>
-				<div class="projects">
-					<div class="project-row">
-						<div class="project-object">
-							<a href="https://ajlace.github.io/Gravaxy/" target="_blank">
-								<img src="images/gravaxy-img.jpg" alt="gravaxy">
+							<div class="project-object">
+								<a href="https://mangoglass.github.io/AgeOfGarb/" target="_blank">
+									<img src="images/ageofgarb.png" alt="Age of Garb">
+								
+									<div class="text-wrapper">
+										<div class="text">
+											<div class="title">
+												<div class="title-text">
+													Age of Garb
+												</div>
+											</div>
+											<div class="description">
+												AR game that let players take control over a drone using their phone to interact with an environment that was placeable on 
+												a surface. The goal was to create a playable field that would not be limited to a small surface such as a 
+												table or a set range on the ground. Instead we wanted the player to be able to define the size of the scene 
+												before they played in order to truly utilize the most of the potential available open space for the player.
+												For this project I worked as project leader and code integrator.
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>		
 							
+							
+						<div class="project-row">
+							<div class="project-object">
+								<a href="https://mangoglass.github.io/simmix-website/" target="_blank">
+									<img src="images/simmix.png" alt="Simmix">
+								
+									<div class="text-wrapper">
+										<div class="text">
+											<div class="title">
+												<div class="title-text">
+													Simmix
+												</div>
+											</div>
+											<div class="description">
+												SimMix is a collaborative 3D modeling software for virtual reality. 
+												It provides an intuitive interface for 3D modeling where the user easily gains 
+												an understanding of the entire three-dimensional object being modeled. 
+												It also allows multiple users to work on the same object and see each other's changes in real time, 
+												making collaboration effortless. I was the lead programmer for this project.
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="project-object">
+								<img src="images/pawn-plugin.png" alt="plugin">
+								
 								<div class="text-wrapper">
 									<div class="text">
 										<div class="title">
 											<div class="title-text">
-												Gravaxy
+												Coming soon: Board Game Plugin
 											</div>
 										</div>
 										<div class="description">
-											As a part of a course, my team and I developed a demo for a game where puzzles in vast space awaits, 
-											using a gravity bending mechanic allowing the player to explore each part of the International Space Station.
+											By creating our own models and defining the physics for a board game, this projects aims to create
+											a fun board game bundle plugin for primarily VR Chat. Two of the included games are Chess and Backgammon.
 										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="project-object">
-							<img src="images/pawn-plugin.png" alt="plugin">
-							
-							<div class="text-wrapper">
-								<div class="text">
-									<div class="title">
-										<div class="title-text">
-											Coming soon: Board Game Plugin
-										</div>
-									</div>
-									<div class="description">
-										By creating our own models and defining the physics for a board game, this projects aims to create
-										a fun board game bundle plugin for primarily VR Chat. Two of the included games are Chess and Backgammon.
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>		
-						
-				</div>
+							
+					</div>
 
-				<div class="clear"></div>
-			</div>
-		</div>
-		
-		
-	</div>
-	
-	<div id="footer">
-		<div class="wrapper">
-			<div id="footer-content">
-				<div id="social-media">
-					<a class="icon fa fa-github" href="https://github.com/mangoglass"></a>
-					<a class="icon fa fa-envelope" href="mailto:tom.axblad@gmail.com"></a>
-					<a class="icon fa fa-linkedin" href="https://www.linkedin.com/in/tom-axblad-73243410b/"></a>
-				</div>
-				<div id="copyright">
-					2020 | &copy Ajla Elmasdotter & Tom Axblad
+					<div class="clear"></div>
 				</div>
 			</div>
+			
+			<div class="divider"></div>
+			
+			<div id="contact" class="center">
+			<h1>Contact:</h1>
+			<br><br>
+			<h2><a href="mailto:tom.axblad@gmail.com">tom.axblad@gmail.com</a></h2>
+			<br><br>
+			
+			</div>
+			
 		</div>
-	</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="footer-content">
+					<div id="footer-icons" class="social-media">
+						<a class="icon fa fa-github" href="https://github.com/mangoglass"></a>
+						<a class="icon fa fa-envelope" href="mailto:tom.axblad@gmail.com"></a>
+						<a class="icon fa fa-linkedin" href="https://www.linkedin.com/in/tom-axblad-73243410b/"></a>
+					</div>
+					<div id="copyright">
+						2020 | &copy Tom Axblad & Ajla Elmasdotter
+					</div>
+				</div>
+			</div>
+		</div>
+	</div id="container">
 
 </body>
 
